@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "friendly_minigames",
+	"version": "${version}",
+	"name": "Friendly Minigames",
+	"description": "Adds Minigames to obtain items in Peaceful, that you cannot get in peaceful.",
+	"authors": [
+		"1306_sebastian"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/friendly_minigames/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.unemployedgames.friendlyminigames.FriendlyMinigames"
+		],
+		"client": [
+			"com.unemployedgames.friendlyminigames.FriendlyMinigamesClient"
+		],
+		"fabric-datagen": [
+			"com.unemployedgames.friendlyminigames.FriendlyMinigamesDataGenerator"
+		]
+	},
+	"mixins": [
+		"friendly_minigames.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.1",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
